@@ -34,3 +34,8 @@
   text-decoration: none;
   font-size: 12px;
 }
+.profile {
+  width: 140px;
+  height: 140px;
+  border-radius: 70px;
+}

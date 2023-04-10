@@ -7,6 +7,9 @@
   overflow: hidden;
   position: relative;
 }
+a:hover {
+  color: #fff;
+}
 .btround {
   border-radius: 25px;
   overflow: hidden;
@@ -38,4 +41,35 @@
   width: 140px;
   height: 140px;
   border-radius: 70px;
+}
+.promotionicon {
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+}
+.floatbtn {
+  background-color: #333;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.floatcon {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.rqbtn {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c9c7c7;
+}
+.betnowbtn {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ece02c;
 }

@@ -44,3 +44,26 @@
   height: 70px;
   border-radius: 70px;
 }
+
+.seats {
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.seat {
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 5px;
+}

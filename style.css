@@ -45,6 +45,49 @@
   border-radius: 70px;
 }
 
+.floatbtn {
+  background-color: #333;
+  padding: 10px 30px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+}
+.floatcon {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+}
+.rqbtn {
+  padding: 10px;
+  width: 300px;
+  border: none;
+  border-radius: 10px;
+  background-color: #c9c7c7;
+}
+.betnowbtn {
+  padding: 10px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  background-color: #ece02c;
+}
+@media screen and (max-width: 450px) {
+  .rqbtn {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c9c7c7;
+  }
+  .betnowbtn {
+    padding: 10px;
+    width: 100px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ece02c;
+  }
+}
+
 .seats {
   padding-right: 35px;
   display: flex;
@@ -66,4 +109,42 @@
   text-align: center;
   padding-top: 5px;
   border-radius: 5px;
+}
+.cellcontainer {
+  margin: 20px;
+}
+.fromto {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 20px;
+}
+.cellgroup {
+  width: 160px;
+  padding: 10px;
+  border-radius: 7px;
+}
+.cell {
+  margin: 10px;
+}
+.cellgrid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+@media only screen and (max-width: 600px) and (min-width: 400px) {
+  .cellgrid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media only screen and (max-width: 450px) and (min-width: 360px) {
+  .cellgrid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media only screen and (max-width: 360px) {
+  .cellgrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
 }

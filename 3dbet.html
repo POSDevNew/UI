@@ -38,7 +38,7 @@
                 </div>
                 <hr>
                 <div class="d-flex mb-3 text-center justify-content-between">
-                    <button class="rqbtn">Quick Choice</button>
+                    <button class="rqbtn" data-bs-toggle="modal" data-bs-target="#quickchoice">အမြန်ရွေး</button>
                     <button class="rqbtn">R</button>
                 </div>
                 <hr>
@@ -57,47 +57,119 @@
             <div class="fromto">
                 <select class="cellgroup" id="cellgroup">
                     <option value="1">000 မှစ၍</option>
-                    <option value="2">Two</option>
-                    <option value="3">Three</option>
+                    <option value="2">100 မှစ၍</option>
+                    <option value="3">200 မှစ၍</option>
+                    <option value="4">300 မှစ၍</option>
+                    <option value="5">400 မှစ၍</option>
+                    <option value="6">500 မှစ၍</option>
+                    <option value="7">600 မှစ၍</option>
+                    <option value="8">700 မှစ၍</option>
+                    <option value="9">800 မှစ၍</option>
+                    <option value="10">900 မှစ၍</option>
                 </select>
             </div>
             <!-- cellgrid -->
-            <form action="#" method="get">
-                <div class="cellgrid">
-                    <span class="cell">
-                        <input type="checkbox" class="btn-check" id="00" autocomplete="off" />
-                        <label class="btn btn-outline-secondary" for="00">00
-                            <div class="progress" style="height: 6px; width: 25px">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </label>
-                    </span>
-                    <span class="cell">
-                        <input type="checkbox" class="btn-check" id="01" autocomplete="off" />
-                        <label class="btn btn-outline-secondary" for="01">01
-                            <div class="progress" style="height: 6px; width: 25px">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </label>
-                    </span>
-                    <span class="cell">
-                        <input type="checkbox" class="btn-check" id="02" autocomplete="off" />
-                        <label class="btn btn-outline-secondary" for="02">02
-                            <div class="progress" style="height: 6px; width: 25px">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
-                                    aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </label>
-                    </span>
 
-                </div>
-            </form>
+            <div class="cellgrid">
+                <span class="cell">
+                    <input type="checkbox" class="btn-check" id="00" autocomplete="off" />
+                    <label class="btn btn-outline-secondary" for="00">00
+                        <div class="progress" style="height: 6px; width: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 100%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </label>
+                </span>
+                <span class="cell">
+                    <input type="checkbox" class="btn-check" id="01" autocomplete="off" />
+                    <label class="btn btn-outline-secondary" for="01">01
+                        <div class="progress" style="height: 6px; width: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </label>
+                </span>
+                <span class="cell">
+                    <input type="checkbox" class="btn-check" id="02" autocomplete="off" />
+                    <label class="btn btn-outline-secondary" for="02">02
+                        <div class="progress" style="height: 6px; width: 25px">
+                            <div class="progress-bar bg-success" role="progressbar" style="width: 70%"
+                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </label>
+                </span>
+
+            </div>
+
 
         </div>
 
 
+    </div>
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="quickchoice" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <div>
+                            <div class="mb-3">(၃) လုံးပူးဂဏန်းများ</div>
+                            <div>
+                                <div class="btn btn-secondary col-2 mb-1">111</div>
+                                <div class="btn btn-secondary col-2 mb-1">222</div>
+                                <div class="btn btn-secondary col-2 mb-1">333</div>
+                                <div class="btn btn-secondary col-2 mb-1">444</div>
+                                <div class="btn btn-secondary col-2 mb-1">555</div>
+                                <div class="btn btn-secondary col-2 mb-1">666</div>
+                                <div class="btn btn-secondary col-2 mb-1">777</div>
+                                <div class="btn btn-secondary col-2 mb-1">888</div>
+                                <div class="btn btn-secondary col-2 mb-1">999</div>
+                                <div class="btn btn-secondary col-2 mb-1">000</div>
+                            </div>
+
+                        </div>
+
+                        <div>
+                            <div class="mb-3 mt-4">100 လုံးစီ</div>
+                            <div>
+                                <div class="btn btn-secondary col-3 mb-1">000-099</div>
+                                <div class="btn btn-secondary col-3 mb-1">100-199</div>
+                                <div class="btn btn-secondary col-3 mb-1">200-299</div>
+                                <div class="btn btn-secondary col-3 mb-1">300-399</div>
+                                <div class="btn btn-secondary col-3 mb-1">400-499</div>
+                                <div class="btn btn-secondary col-3 mb-1">500-599</div>
+                                <div class="btn btn-secondary col-3 mb-1">600-699</div>
+                                <div class="btn btn-secondary col-3 mb-1">700-799</div>
+                                <div class="btn btn-secondary col-3 mb-1">800-899</div>
+                                <div class="btn btn-secondary col-3 mb-1">900-999</div>
+                            </div>
+
+                        </div>
+
+                        <div class="mb-3 mt-3">
+                            <input type="text" class="form-control" placeholder="100 Kyat">
+                        </div>
+
+                        <div class="d-flex justify-content-around mb-3 mt-3">
+                            <button class="btn btn-secondary col-5" data-bs-dismiss="modal">Cancle</button>
+                            <button class="btn btn-warning col-5">Bet</button>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
